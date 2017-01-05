@@ -9,7 +9,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tape test/*.js | faucet"
+    "test": "tape test/*.js | faucet",
+    "build": "browserify index.js -s PathFinder -t uglifyify | uglifyjs | cat license.js - > dist/geojson-path-finder.$npm_package_version.min.js"
   },
   "author": "Per Liedman <per@liedman.net>",
   "license": "ISC",
@@ -20,7 +21,10 @@
     "@turf/helpers": "3.7.1"
   },
   "devDependencies": {
+    "browserify": "^13.3.0",
     "faucet": "0.0.1",
-    "tape": "^4.5.1"
+    "tape": "^4.5.1",
+    "uglify-js": "^2.7.5",
+    "uglifyify": "^3.0.4"
   }
 }
