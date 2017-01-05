@@ -14,10 +14,10 @@
   "author": "Per Liedman <per@liedman.net>",
   "license": "ISC",
   "dependencies": {
-    "tinyqueue": "^1.1.0",
-    "turf-distance": "^1.1.0",
-    "turf-explode": "^1.0.1",
-    "turf-point": "^2.0.1"
+    "tinyqueue": "1.1.0",
+    "@turf/distance": "3.7.0",
+    "@turf/explode": "3.7.0",
+    "@turf/helpers": "3.7.1"
   },
   "devDependencies": {
     "faucet": "0.0.1",

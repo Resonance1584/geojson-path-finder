@@ -1,4 +1,4 @@
-var explode = require('turf-explode');
+var explode = require('@turf/explode');
 
 module.exports = topology;
 

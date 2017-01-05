@@ -1,8 +1,8 @@
 var findPath = require('./dijkstra'),
     topology = require('./topology'),
     compactor = require('./compactor')
-    point = require('turf-point'),
-    distance = require('turf-distance');
+    point = require('@turf/helpers').point,
+    distance = require('@turf/distance');
 
 module.exports = PathFinder;
 
