@@ -81,7 +81,7 @@ PathFinder.prototype = {
                     }
 
                     return cs;
-                }.bind(this), []).concat([this._sourceVertices[finish]]),
+                }.bind(this), []),
                 weight: weight
             };
         } else {
