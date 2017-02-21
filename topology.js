@@ -36,7 +36,7 @@ function topology(geojson, options) {
         precision = options.precision || 1e-5,
         roundCoord = function roundCoord(c) {
             return c.map(function roundToPrecision(c) {
-                return Math.round(c / precision) * precision;
+                return Number(c.toFixed(5));
             });
         };
 

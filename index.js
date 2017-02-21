@@ -8,7 +8,7 @@ module.exports = PathFinder;
 
 function PathFinder(geojson, options) {
     options = options || {};
-    
+
     var topo = topology(geojson, options),
         weightFn = options.weightFn || function defaultWeightFn(a, b) {
             return distance(point(a), point(b));
@@ -94,7 +94,7 @@ PathFinder.prototype = {
 
     _roundCoord: function(c) {
         return c.map(function roundToPrecision(c) {
-            return Math.round(c / this._precision) * this._precision;
+            return Number(c.toFixed(5));
         }.bind(this));
     },
 
